@@ -156,9 +156,9 @@ export default class DaysView extends View {
       el.textContent = date.getDate();
 
       if (current < this.first) {
-        classList.add('prev', 'text-gray-500', 'dark:text-white');
+        classList.add('prev', '!text-gray-500', 'dark:text-white');
       } else if (current > this.last) {
-        classList.add('next', 'text-gray-500', 'dark:text-white');
+        classList.add('next', '!text-gray-500', 'dark:text-white');
       }
       if (this.today === current) {
         classList.add('today', 'bg-gray-100', 'dark:bg-gray-600');
