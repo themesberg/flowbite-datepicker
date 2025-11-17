@@ -24,7 +24,6 @@
     --color-cyan-500: oklch(71.5% 0.143 215.221);
     --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-blue-200: oklch(88.2% 0.059 254.128);
-    --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -60,8 +59,6 @@
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --radius-lg: 16px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -80,6 +77,7 @@
     --color-neutral-tertiary-medium: var(--color-gray-100);
     --color-neutral-quaternary: var(--color-gray-200);
     --color-brand: var(--color-blue-700);
+    --color-brand-medium: var(--color-blue-200);
     --color-brand-strong: var(--color-blue-800);
     --color-dark: var(--color-gray-800);
     --color-light: var(--color-gray-100);
@@ -363,13 +361,13 @@
   .rounded-base {
     border-radius: var(--radius-base);
   }
-  .rounded-l-lg {
-    border-top-left-radius: var(--radius-lg);
-    border-bottom-left-radius: var(--radius-lg);
+  .rounded-s-base {
+    border-start-start-radius: var(--radius-base);
+    border-end-start-radius: var(--radius-base);
   }
-  .rounded-r-lg {
-    border-top-right-radius: var(--radius-lg);
-    border-bottom-right-radius: var(--radius-lg);
+  .rounded-e-base {
+    border-start-end-radius: var(--radius-base);
+    border-end-end-radius: var(--radius-base);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -378,54 +376,6 @@
   .border-0 {
     border-style: var(--tw-border-style);
     border-width: 0px;
-  }
-  .dark {
-    & .apexcharts-canvas .apexcharts-tooltip {
-      background-color: var(--color-neutral-secondary-medium) !important;
-      color: var(--color-body) !important;
-      border-color: var(--color-default) !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
-      background-color: var(--color-neutral-tertiary-medium) !important;
-      border-color: var(--color-light) !important;
-      color: var(--color-heading) !important;
-    }
-    & .apexcharts-canvas .apexcharts-xaxistooltip {
-      color: var(--color-body) !important;
-      background-color: var(--color-neutral-secondary-medium) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
-      color: var(--color-body) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
-      color: white !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active {
-      background-color: var(--color-neutral-secondary-medium) !important;
-      color: var(--color-body) !important;
-    }
-    & .apexcharts-canvas .apexcharts-legend-text {
-      color: var(--color-body) !important;
-    }
-    & .apexcharts-canvas .apexcharts-legend-text:not(.apexcharts-inactive-legend):hover {
-      color: heading !important;
-    }
-    & .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-value {
-      fill: white !important;
-    }
-    & .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-label {
-      fill: var(--color-body) !important;
-    }
-    & .apexcharts-gridline {
-      stroke: var(--color-default) !important;
-    }
-    & .apexcharts-xcrosshairs {
-      stroke: var(--color-default) !important;
-    }
-    & .apexcharts-ycrosshairs {
-      stroke: var(--color-default) !important;
-    }
   }
   .border-blue-700 {
     border-color: var(--color-blue-700);
@@ -454,13 +404,14 @@
   .bg-neutral-primary-medium {
     background-color: var(--color-neutral-primary-medium);
   }
+  .bg-neutral-secondary-medium {
+    background-color: var(--color-neutral-secondary-medium);
+  }
+  .bg-neutral-tertiary-medium {
+    background-color: var(--color-neutral-tertiary-medium);
+  }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .dark {
-    & .selectedCell {
-      background-color: var(--color-neutral-secondary-medium);
-    }
   }
   .selected {
     .datatable-wrapper .datatable-table tbody tr& {
@@ -597,14 +548,14 @@
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
-  .focus\:ring-blue-300 {
+  .focus\:ring-brand-medium {
     &:focus {
-      --tw-ring-color: var(--color-blue-300);
+      --tw-ring-color: var(--color-brand-medium);
     }
   }
-  .focus\:ring-gray-200 {
+  .focus\:ring-neutral-tertiary {
     &:focus {
-      --tw-ring-color: var(--color-gray-200);
+      --tw-ring-color: var(--color-neutral-tertiary);
     }
   }
   .focus\:outline-none {

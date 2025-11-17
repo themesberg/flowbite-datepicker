@@ -1111,12 +1111,12 @@ input[type="range"]::-ms-fill-lower {
   border-radius: 0.5rem;
 }
 
-.rounded-l-lg {
+.rounded-s-base {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
 
-.rounded-r-lg {
+.rounded-e-base {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }

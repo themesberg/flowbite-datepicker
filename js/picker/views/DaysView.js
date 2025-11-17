@@ -178,21 +178,21 @@ export default class DaysView extends View {
       if (this.range) {
         const [rangeStart, rangeEnd] = this.range;
         if (current > rangeStart && current < rangeEnd) {
-          classList.add('range', 'bg-gray-200', 'dark:bg-gray-600');
-          classList.remove('rounded-base', 'rounded-l-lg', 'rounded-r-lg')
+          classList.add('range', 'bg-neutral-tertiary-medium');
+          classList.remove('rounded-base', 'rounded-s-base', 'rounded-e-base')
         }
         if (current === rangeStart) {
-          classList.add('range-start', 'bg-gray-100', 'dark:bg-gray-600', 'rounded-l-lg');
-          classList.remove('rounded-base', 'rounded-r-lg');
+          classList.add('range-start', 'bg-brand', 'rounded-s-base');
+          classList.remove('rounded-base', 'rounded-e-base');
         }
         if (current === rangeEnd) {
-          classList.add('range-end', 'bg-gray-100', 'dark:bg-gray-600', 'rounded-r-lg');
-          classList.remove('rounded-base', 'rounded-l-lg');
+          classList.add('range-end', 'bg-neutral-tertiary-medium', 'rounded-e-base');
+          classList.remove('rounded-base', 'rounded-s-base');
         }
       }
       if (this.selected.includes(current)) {
         classList.add('selected', 'bg-brand', 'text-white');
-        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'dark:bg-gray-600', 'bg-gray-100', 'bg-gray-200');
+        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'bg-neutral-tertiary-medium');
       }
       if (current === this.focused) {
         classList.add('focused');
@@ -216,22 +216,22 @@ export default class DaysView extends View {
     Array.from(this.grid.children).forEach((el) => {
       const current = Number(el.dataset.date);
       const classList = el.classList;
-      classList.remove('bg-gray-200', 'dark:bg-gray-600', 'rounded-l-lg', 'rounded-r-lg')
+      classList.remove('bg-neutral-tertiary-medium', 'rounded-s-base', 'rounded-e-base')
       if (current > rangeStart && current < rangeEnd) {
-        classList.add('range', 'bg-gray-200', 'dark:bg-gray-600');
+        classList.add('range', 'bg-neutral-tertiary-medium');
         classList.remove('rounded-base');
       }
       if (current === rangeStart) {
-        classList.add('range-start', 'bg-gray-200', 'dark:bg-gray-600', 'rounded-l-lg');
-        classList.remove('rounded-base',);
+        classList.add('range-start', 'bg-brand', 'text-white', 'rounded-s-base');
+        classList.remove('rounded-base');
       }
       if (current === rangeEnd) {
-        classList.add('range-end', 'bg-gray-200', 'dark:bg-gray-600', 'rounded-r-lg');
-        classList.remove('rounded-base',);
+        classList.add('range-end', 'bg-neutral-tertiary-medium', 'rounded-e-base');
+        classList.remove('rounded-base');
       }
       if (this.selected.includes(current)) {
         classList.add('selected', 'bg-brand', 'text-white');
-        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'bg-gray-100', 'bg-gray-200', 'dark:bg-gray-600');
+        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'bg-neutral-tertiary-medium');
       }
       if (current === this.focused) {
         classList.add('focused');

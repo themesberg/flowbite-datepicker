@@ -762,16 +762,16 @@
     <div class="datepicker-header">
       <div class="datepicker-title bg-white dark:bg-gray-700 dark:text-white px-2 py-3 text-center font-medium"></div>
       <div class="datepicker-controls flex justify-between mb-2">
-        <button type="button" class="bg-white dark:bg-gray-700 rounded-base text-fg-disabled hover:bg-neutral-tertiary-medium hover:text-body dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-200 prev-btn"></button>
-        <button type="button" class="text-sm rounded-base text-body bg-white dark:bg-gray-700 font-medium py-2.5 px-5 hover:bg-neutral-tertiary-medium focus:outline-none focus:ring-2 focus:ring-gray-200 view-switch"></button>
-        <button type="button" class="bg-white dark:bg-gray-700 rounded-base text-fg-disabled hover:bg-neutral-tertiary-medium hover:text-body dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-200 next-btn"></button>
+        <button type="button" class="bg-white dark:bg-gray-700 rounded-base text-fg-disabled hover:bg-neutral-tertiary-medium hover:text-body dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-neutral-tertiary prev-btn"></button>
+        <button type="button" class="text-sm rounded-base text-body bg-white dark:bg-gray-700 font-medium py-2.5 px-5 hover:bg-neutral-tertiary-medium focus:outline-none focus:ring-2 focus:ring-neutral-tertiary view-switch"></button>
+        <button type="button" class="bg-white dark:bg-gray-700 rounded-base text-fg-disabled hover:bg-neutral-tertiary-medium hover:text-body dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-neutral-tertiary next-btn"></button>
       </div>
     </div>
     <div class="datepicker-main p-1"></div>
     <div class="datepicker-footer">
       <div class="datepicker-controls flex space-x-2 rtl:space-x-reverse mt-2">
-        <button type="button" class="%buttonClass% today-btn text-white bg-blue-700 !bg-primary-700 dark:bg-blue-600 dark:!bg-primary-600 hover:bg-blue-800 hover:!bg-primary-800 dark:hover:bg-blue-700 dark:hover:!bg-primary-700 focus:ring-4 focus:ring-blue-300 focus:!ring-primary-300 font-medium rounded-base text-sm px-5 py-2 text-center w-1/2"></button>
-        <button type="button" class="%buttonClass% clear-btn text-body bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 hover:bg-neutral-tertiary-medium focus:ring-4 focus:ring-blue-300 focus:!ring-primary-300 font-medium rounded-base text-sm px-5 py-2 text-center w-1/2"></button>
+        <button type="button" class="%buttonClass% today-btn text-white bg-blue-700 !bg-primary-700 dark:bg-blue-600 dark:!bg-primary-600 hover:bg-blue-800 hover:!bg-primary-800 dark:hover:bg-blue-700 dark:hover:!bg-primary-700 focus:ring-4 focus:ring-brand-medium font-medium rounded-base text-sm px-5 py-2 text-center w-1/2"></button>
+        <button type="button" class="%buttonClass% clear-btn text-body bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 hover:bg-neutral-tertiary-medium focus:ring-4 focus:ring-brand-medium font-medium rounded-base text-sm px-5 py-2 text-center w-1/2"></button>
       </div>
     </div>
   </div>
@@ -1013,15 +1013,15 @@
           const [rangeStart, rangeEnd] = this.range;
           if (current > rangeStart && current < rangeEnd) {
             classList.add('range', 'bg-gray-200', 'dark:bg-gray-600');
-            classList.remove('rounded-base', 'rounded-l-lg', 'rounded-r-lg');
+            classList.remove('rounded-base', 'rounded-s-base', 'rounded-e-base');
           }
           if (current === rangeStart) {
-            classList.add('range-start', 'bg-gray-100', 'dark:bg-gray-600', 'rounded-l-lg');
-            classList.remove('rounded-base', 'rounded-r-lg');
+            classList.add('range-start', 'bg-gray-100', 'dark:bg-gray-600', 'rounded-s-base');
+            classList.remove('rounded-base', 'rounded-e-base');
           }
           if (current === rangeEnd) {
-            classList.add('range-end', 'bg-gray-100', 'dark:bg-gray-600', 'rounded-r-lg');
-            classList.remove('rounded-base', 'rounded-l-lg');
+            classList.add('range-end', 'bg-gray-100', 'dark:bg-gray-600', 'rounded-e-base');
+            classList.remove('rounded-base', 'rounded-s-base');
           }
         }
         if (this.selected.includes(current)) {
@@ -1050,17 +1050,17 @@
       Array.from(this.grid.children).forEach((el) => {
         const current = Number(el.dataset.date);
         const classList = el.classList;
-        classList.remove('bg-gray-200', 'dark:bg-gray-600', 'rounded-l-lg', 'rounded-r-lg');
+        classList.remove('bg-gray-200', 'dark:bg-gray-600', 'rounded-s-base', 'rounded-e-base');
         if (current > rangeStart && current < rangeEnd) {
           classList.add('range', 'bg-gray-200', 'dark:bg-gray-600');
           classList.remove('rounded-base');
         }
         if (current === rangeStart) {
-          classList.add('range-start', 'bg-gray-200', 'dark:bg-gray-600', 'rounded-l-lg');
+          classList.add('range-start', 'bg-gray-200', 'dark:bg-gray-600', 'rounded-s-base');
           classList.remove('rounded-base',);
         }
         if (current === rangeEnd) {
-          classList.add('range-end', 'bg-gray-200', 'dark:bg-gray-600', 'rounded-r-lg');
+          classList.add('range-end', 'bg-gray-200', 'dark:bg-gray-600', 'rounded-e-base');
           classList.remove('rounded-base',);
         }
         if (this.selected.includes(current)) {

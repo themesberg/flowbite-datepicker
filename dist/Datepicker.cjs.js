@@ -574,10 +574,10 @@ var defaultOptions = {
   maxNumberOfDates: 1,
   maxView: 3,
   minDate: null,
-  nextArrow: '<svg class="w-4 h-4 rtl:rotate-180 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>',
+  nextArrow: '<svg class="w-4 h-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>',
   orientation: 'auto',
   pickLevel: 0,
-  prevArrow: '<svg class="w-4 h-4 rtl:rotate-180 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/></svg>',
+  prevArrow: '<svg class="w-4 h-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/></svg>',
   showDaysOfWeek: true,
   showOnClick: true,
   showOnFocus: true,
@@ -886,7 +886,7 @@ function processOptions(options, datepicker) {
   return config;
 }
 
-var pickerTemplate = optimizeTemplateHTML("<div class=\"datepicker hidden\">\n  <div class=\"datepicker-picker inline-block rounded-base bg-neutral-primary-medium border border-default-medium p-4\">\n    <div class=\"datepicker-header\">\n      <div class=\"datepicker-title bg-neutral-primary-medium text-heading px-2 py-3 text-center font-medium\"></div>\n      <div class=\"datepicker-controls flex justify-between mb-2\">\n        <button type=\"button\" class=\"bg-neutral-primary-medium rounded-base text-fg-disabled hover:bg-neutral-tertiary-medium hover:text-body dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-200 prev-btn\"></button>\n        <button type=\"button\" class=\"text-sm rounded-base text-heading bg-neutral-primary-medium font-medium py-2.5 px-5 hover:bg-neutral-tertiary-medium focus:outline-none focus:ring-2 focus:ring-gray-200 view-switch\"></button>\n        <button type=\"button\" class=\"bg-neutral-primary-medium rounded-base text-fg-disabled hover:bg-neutral-tertiary-medium hover:text-body dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-200 next-btn\"></button>\n      </div>\n    </div>\n    <div class=\"datepicker-main p-1\"></div>\n    <div class=\"datepicker-footer\">\n      <div class=\"datepicker-controls flex space-x-2 rtl:space-x-reverse mt-2\">\n        <button type=\"button\" class=\"%buttonClass% today-btn text-white bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-blue-300 focus:!ring-primary-300 font-medium rounded-base text-sm px-5 py-2 text-center w-1/2\"></button>\n        <button type=\"button\" class=\"%buttonClass% clear-btn text-body bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 hover:bg-neutral-tertiary-medium focus:ring-4 focus:ring-blue-300 focus:!ring-primary-300 font-medium rounded-base text-sm px-5 py-2 text-center w-1/2\"></button>\n      </div>\n    </div>\n  </div>\n</div>");
+var pickerTemplate = optimizeTemplateHTML("<div class=\"datepicker hidden\">\n  <div class=\"datepicker-picker inline-block rounded-base bg-neutral-primary-medium border border-default-medium p-4\">\n    <div class=\"datepicker-header\">\n      <div class=\"datepicker-title bg-neutral-primary-medium text-heading px-2 py-3 text-center font-medium\"></div>\n      <div class=\"datepicker-controls flex justify-between mb-2\">\n        <button type=\"button\" class=\"bg-neutral-primary-medium rounded-base text-body hover:bg-neutral-tertiary-medium hover:text-heading text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-neutral-tertiary prev-btn\"></button>\n        <button type=\"button\" class=\"text-sm rounded-base text-heading bg-neutral-primary-medium font-medium py-2.5 px-5 hover:bg-neutral-tertiary-medium focus:outline-none focus:ring-2 focus:ring-neutral-tertiary view-switch\"></button>\n        <button type=\"button\" class=\"bg-neutral-primary-medium rounded-base text-body hover:bg-neutral-tertiary-medium hover:text-heading text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-neutral-tertiary next-btn\"></button>\n      </div>\n    </div>\n    <div class=\"datepicker-main p-1\"></div>\n    <div class=\"datepicker-footer\">\n      <div class=\"datepicker-controls flex space-x-2 rtl:space-x-reverse mt-2\">\n        <button type=\"button\" class=\"%buttonClass% today-btn text-white bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium font-medium rounded-base text-sm px-5 py-2 text-center w-1/2\"></button>\n        <button type=\"button\" class=\"%buttonClass% clear-btn text-body bg-neutral-secondary-medium border border-default-medium hover:bg-neutral-tertiary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium rounded-base text-sm px-5 py-2 text-center w-1/2\"></button>\n      </div>\n    </div>\n  </div>\n</div>");
 
 var daysTemplate = optimizeTemplateHTML("<div class=\"days\">\n  <div class=\"days-of-week grid grid-cols-7 mb-1\">".concat(createTagRepeat('span', 7, {
   "class": 'dow block flex-1 leading-9 border-0 rounded-base cursor-default text-center text-body font-medium text-sm'
@@ -1140,21 +1140,21 @@ var DaysView = /*#__PURE__*/function (_View) {
             rangeStart = _this2$range[0],
             rangeEnd = _this2$range[1];
           if (current > rangeStart && current < rangeEnd) {
-            classList.add('range', 'bg-gray-200', 'dark:bg-gray-600');
-            classList.remove('rounded-base', 'rounded-l-lg', 'rounded-r-lg');
+            classList.add('range', 'bg-neutral-tertiary-medium');
+            classList.remove('rounded-base', 'rounded-s-base', 'rounded-e-base');
           }
           if (current === rangeStart) {
-            classList.add('range-start', 'bg-gray-100', 'dark:bg-gray-600', 'rounded-l-lg');
-            classList.remove('rounded-base', 'rounded-r-lg');
+            classList.add('range-start', 'bg-brand', 'rounded-s-base');
+            classList.remove('rounded-base', 'rounded-e-base');
           }
           if (current === rangeEnd) {
-            classList.add('range-end', 'bg-gray-100', 'dark:bg-gray-600', 'rounded-r-lg');
-            classList.remove('rounded-base', 'rounded-l-lg');
+            classList.add('range-end', 'bg-neutral-tertiary-medium', 'rounded-e-base');
+            classList.remove('rounded-base', 'rounded-s-base');
           }
         }
         if (_this2.selected.includes(current)) {
           classList.add('selected', 'bg-brand', 'text-white');
-          classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'dark:bg-gray-600', 'bg-gray-100', 'bg-gray-200');
+          classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'bg-neutral-tertiary-medium');
         }
         if (current === _this2.focused) {
           classList.add('focused');
@@ -1181,22 +1181,22 @@ var DaysView = /*#__PURE__*/function (_View) {
       Array.from(this.grid.children).forEach(function (el) {
         var current = Number(el.dataset.date);
         var classList = el.classList;
-        classList.remove('bg-gray-200', 'dark:bg-gray-600', 'rounded-l-lg', 'rounded-r-lg');
+        classList.remove('bg-neutral-tertiary-medium', 'rounded-s-base', 'rounded-e-base');
         if (current > rangeStart && current < rangeEnd) {
-          classList.add('range', 'bg-gray-200', 'dark:bg-gray-600');
+          classList.add('range', 'bg-neutral-tertiary-medium');
           classList.remove('rounded-base');
         }
         if (current === rangeStart) {
-          classList.add('range-start', 'bg-gray-200', 'dark:bg-gray-600', 'rounded-l-lg');
+          classList.add('range-start', 'bg-brand', 'text-white', 'rounded-s-base');
           classList.remove('rounded-base');
         }
         if (current === rangeEnd) {
-          classList.add('range-end', 'bg-gray-200', 'dark:bg-gray-600', 'rounded-r-lg');
+          classList.add('range-end', 'bg-neutral-tertiary-medium', 'rounded-e-base');
           classList.remove('rounded-base');
         }
         if (_this3.selected.includes(current)) {
           classList.add('selected', 'bg-brand', 'text-white');
-          classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'bg-gray-100', 'bg-gray-200', 'dark:bg-gray-600');
+          classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'bg-neutral-tertiary-medium');
         }
         if (current === _this3.focused) {
           classList.add('focused');
