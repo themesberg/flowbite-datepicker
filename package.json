@@ -1,5 +1,5 @@
 {
-  "name": "flowbite-datepicker-test",
+  "name": "flowbite-datepicker",
   "version": "2.0.0",
   "description": "A Tailwind CSS powered datepicker built with vanilla JavaScript and Flowbite",
   "main": "dist/main.cjs.js",
