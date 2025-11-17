@@ -2,8 +2,8 @@
  * Hungarian translation for bootstrap-datepicker
  * Sotus László <lacisan@gmail.com>
  */
-export default {
-  hu: {
+(function () {
+  Datepicker.locales.hu = {
     days: ["vasárnap", "hétfő", "kedd", "szerda", "csütörtök", "péntek", "szombat"],
     daysShort: ["vas", "hét", "ked", "sze", "csü", "pén", "szo"],
     daysMin: ["V", "H", "K", "Sze", "Cs", "P", "Szo"],
@@ -14,5 +14,5 @@ export default {
     clear: "töröl",
     titleFormat: "y. MM",
     format: "yyyy.mm.dd"
-  }
-};
+  };
+}());

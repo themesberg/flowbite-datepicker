@@ -2,8 +2,8 @@
  * French translation for bootstrap-datepicker
  * Nico Mollet <nico.mollet@gmail.com>
  */
-export default {
-  fr: {
+(function () {
+  Datepicker.locales.fr = {
     days: ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
     daysShort: ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
     daysMin: ["d", "l", "ma", "me", "j", "v", "s"],
@@ -14,5 +14,5 @@ export default {
     clear: "Effacer",
     weekStart: 1,
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

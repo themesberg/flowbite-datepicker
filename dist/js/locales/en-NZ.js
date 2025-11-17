@@ -1,8 +1,8 @@
 /**
  * New Zealand English translation for bootstrap-datepicker
  */
-export default {
-  'en-NZ': {
+(function () {
+  Datepicker.locales['en-NZ'] = {
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
     daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
@@ -13,5 +13,5 @@ export default {
     clear: "Clear",
     weekStart: 1,
     format: "d/mm/yyyy"
-  }
-};
+  };
+}());

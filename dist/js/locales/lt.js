@@ -3,8 +3,8 @@
  * Šarūnas Gliebus <ssharunas@yahoo.co.uk>
  */
 
-export default {
-  lt: {
+(function () {
+  Datepicker.locales.lt = {
     days: ["Sekmadienis", "Pirmadienis", "Antradienis", "Trečiadienis", "Ketvirtadienis", "Penktadienis", "Šeštadienis"],
     daysShort: ["S", "Pr", "A", "T", "K", "Pn", "Š"],
     daysMin: ["Sk", "Pr", "An", "Tr", "Ke", "Pn", "Št"],
@@ -15,5 +15,5 @@ export default {
     clear: "Išvalyti",
     weekStart: 1,
     format: "yyyy-mm-dd"
-  }
-};
+  };
+}());

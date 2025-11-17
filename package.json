@@ -30,7 +30,7 @@
   "scripts": {
     "build:js": "rollup -c",
     "build:locales": "node scripts/build-locales.js",
-    "build": "npm run build:js && npm run build:locales && npx tailwindcss -o dist/css/datepicker.min.css",
+    "build": "npm run build:js && npm run build:locales && npm run minify && npx @tailwindcss/cli -i ./style.css -o ./dist/css/datepicker.min.css",
     "minify:js": "node scripts/minify-js.js",
     "minify": "npm run minify:js",
     "make:js": "npm run build:js && npm run minify:js",
@@ -52,6 +52,7 @@
     "@babel/preset-env": "^7.24.7",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^26.0.1",
+    "@tailwindcss/vite": "^4.1.17",
     "autoprefixer": "^10.4.0",
     "bootstrap4": "npm:bootstrap@^4.5.3",
     "bootstrap5": "npm:bootstrap@^5.0.1",
@@ -60,19 +61,20 @@
     "cssnano": "^4.1.10",
     "docsify-cli": "^4.4.2",
     "esm": "^3.2.25",
+    "flowbite": "^4.0.0",
     "foundation-sites": "^6.6.3",
     "jsdom": "^16.4.0",
     "mocha": "^8.2.1",
-    "postcss": "^8.4.1",
+    "postcss": "^8.5.6",
     "rollup": "^2.35.1",
     "simulant": "^0.2.2",
     "sinon": "^9.2.2",
-    "tailwindcss": "^3.3.5",
+    "tailwindcss": "^4.1.17",
     "uglify-es": "^3.3.9",
     "unexpected": "^12.0.0"
   },
   "dependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "flowbite": "^2.0.0"
+    "@tailwindcss/postcss": "^4.1.17"
   }
 }

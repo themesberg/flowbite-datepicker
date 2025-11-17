@@ -3,8 +3,8 @@
  * Original code: Cauan Cabral <cauan@radig.com.br>
  * Tiago Melo <tiago.blackcode@gmail.com>
  */
-export default {
-  pt: {
+(function () {
+  Datepicker.locales.pt = {
     days: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
     daysShort: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
     daysMin: ["Do", "Se", "Te", "Qu", "Qu", "Se", "Sa"],
@@ -14,5 +14,5 @@ export default {
     monthsTitle: "Meses",
     clear: "Limpar",
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

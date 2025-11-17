@@ -462,7 +462,7 @@ export default class Datepicker {
       return;
     }
     this.editMode = true;
-    this.inputField.classList.add('in-edit', 'border-blue-700', '!border-primary-700');
+    this.inputField.classList.add('in-edit', 'border-brand');
   }
 
   /**
@@ -479,7 +479,7 @@ export default class Datepicker {
     }
     const opts = Object.assign({update: false}, options);
     delete this.editMode;
-    this.inputField.classList.remove('in-edit', 'border-blue-700', '!border-primary-700');
+    this.inputField.classList.remove('in-edit', 'border-brand');
     if (opts.update) {
       this.update(opts);
     }

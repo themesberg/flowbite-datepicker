@@ -3,8 +3,8 @@
  * Ando Roots <https: //github.com/anroots>
  * Fixes by Illimar Tambek <<https: //github.com/ragulka>
  */
-export default {
-  et: {
+(function () {
+  Datepicker.locales.et = {
     days: ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"],
     daysShort: ["Pühap", "Esmasp", "Teisip", "Kolmap", "Neljap", "Reede", "Laup"],
     daysMin: ["P", "E", "T", "K", "N", "R", "L"],
@@ -14,5 +14,5 @@ export default {
     clear: "Tühjenda",
     weekStart: 1,
     format: "dd.mm.yyyy"
-  }
-};
+  };
+}());

@@ -2,8 +2,8 @@
  * Tamil translation for bootstrap-datepicker
  * Abubacker Siddik A <abuabdul86@hotmail.com>
  */
-export default {
-  ta: {
+(function () {
+  Datepicker.locales.ta = {
     days: ["ஞாயிறு", "திங்கள்", "செவ்வாய்", "புதன்", "வியாழன்", "வெள்ளி", "சனி"],
     daysShort: ["ஞாயி", "திங்", "செவ்", "புத", "வியா", "வெள்", "சனி"],
     daysMin: ["ஞா", "தி", "செ", "பு", "வி", "வெ", "ச"],
@@ -14,5 +14,5 @@ export default {
     clear: "நீக்கு",
     weekStart: 1,
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

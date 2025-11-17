@@ -2,8 +2,8 @@
  * Spanish translation for bootstrap-datepicker
  * Bruno Bonamin <bruno.bonamin@gmail.com>
  */
-export default {
-  es: {
+(function () {
+  Datepicker.locales.es = {
     days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
     daysShort: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
     daysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
@@ -14,5 +14,5 @@ export default {
     clear: "Borrar",
     weekStart: 1,
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

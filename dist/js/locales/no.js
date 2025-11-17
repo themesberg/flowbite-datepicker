@@ -2,8 +2,8 @@
  * Norwegian translation for bootstrap-datepicker
  * George Gooding <george@nettsentrisk.no>
  */
-export default {
-  no: {
+(function () {
+  Datepicker.locales.no = {
     days: ['søndag', 'mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag'],
     daysShort: ['søn', 'man', 'tir', 'ons', 'tor', 'fre', 'lør'],
     daysMin: ['sø', 'ma', 'ti', 'on', 'to', 'fr', 'lø'],
@@ -14,5 +14,5 @@ export default {
     clear: 'Nullstill',
     weekStart: 1,
     format: 'dd.mm.yyyy'
-  }
-};
+  };
+}());

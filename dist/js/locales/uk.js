@@ -2,8 +2,8 @@
  * Ukrainian translation for bootstrap-datepicker
  * Igor Polynets
  */
-export default {
-  uk: {
+(function () {
+  Datepicker.locales.uk = {
     days: ["Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота"],
     daysShort: ["Нед", "Пнд", "Втр", "Срд", "Чтв", "Птн", "Суб"],
     daysMin: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
@@ -13,5 +13,5 @@ export default {
     clear: "Очистити",
     format: "dd.mm.yyyy",
     weekStart: 1
-  }
-};
+  };
+}());

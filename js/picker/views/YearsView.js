@@ -89,7 +89,7 @@ export default class YearsView extends View {
       const current = this.start + (index * this.step);
       const date = dateValue(current, 0, 1);
 
-      el.className = `datepicker-cell hover:bg-gray-100 dark:hover:bg-gray-600 block flex-1 leading-9 border-0 rounded-lg cursor-pointer text-center text-gray-900 dark:text-white font-semibold text-sm ${this.cellClass}`;
+      el.className = `datepicker-cell hover:bg-neutral-tertiary-medium block flex-1 leading-9 border-0 rounded-base cursor-pointer text-center text-body dark:text-white font-semibold text-sm ${this.cellClass}`;
       if (this.isMinView) {
         el.dataset.date = date;
       }
@@ -116,8 +116,8 @@ export default class YearsView extends View {
         }
       }
       if (this.selected.includes(current)) {
-        classList.add('selected', 'bg-blue-700', '!bg-primary-700', 'text-white', 'dark:bg-blue-600', 'dark:!bg-primary-600', 'dark:text-white');
-        classList.remove('text-gray-900', 'hover:bg-gray-100', 'dark:text-white', 'dark:hover:bg-gray-600');
+        classList.add('selected', 'bg-brand', 'text-white', 'dark:text-white');
+        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'dark:text-white');
       }
       if (current === this.focused) {
         classList.add('focused');
@@ -135,7 +135,7 @@ export default class YearsView extends View {
     this.grid
       .querySelectorAll('.range, .range-start, .range-end, .selected, .focused')
       .forEach((el) => {
-        el.classList.remove('range', 'range-start', 'range-end', 'selected', 'bg-blue-700', '!bg-primary-700', 'text-white', 'dark:bg-blue-600', 'dark!bg-primary-600', 'dark:text-white', 'focused');
+        el.classList.remove('range', 'range-start', 'range-end', 'selected', 'bg-brand', 'text-white', 'dark:text-white', 'focused');
       });
     Array.from(this.grid.children).forEach((el) => {
       const current = Number(el.textContent);
@@ -150,8 +150,8 @@ export default class YearsView extends View {
         classList.add('range-end');
       }
       if (this.selected.includes(current)) {
-        classList.add('selected', 'bg-blue-700', '!bg-primary-700', 'text-white', 'dark:bg-blue-600', 'dark:!bg-primary-600', 'dark:text-white');
-        classList.remove('text-gray-900', 'hover:bg-gray-100', 'dark:text-white', 'dark:hover:bg-gray-600');
+        classList.add('selected', 'bg-brand', 'text-white', 'hover:text-leading');
+        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'hover:text-leading');
       }
       if (current === this.focused) {
         classList.add('focused');

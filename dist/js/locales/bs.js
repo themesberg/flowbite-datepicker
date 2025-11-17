@@ -1,8 +1,8 @@
 /**
  * Bosnian translation for bootstrap-datepicker
  */
-export default {
-  bs: {
+(function () {
+  Datepicker.locales.bs = {
     days: ["Nedjelja","Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota"],
     daysShort: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
     daysMin: ["N", "Po", "U", "Sr", "Č", "Pe", "Su"],
@@ -11,5 +11,5 @@ export default {
     today: "Danas",
     weekStart: 1,
     format: "dd.mm.yyyy"
-  }
-};
+  };
+}());

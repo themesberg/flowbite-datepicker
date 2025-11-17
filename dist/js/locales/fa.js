@@ -2,8 +2,8 @@
  * Persian translation for bootstrap-datepicker
  * Mostafa Rokooie <mostafa.rokooie@gmail.com>
  */
-export default {
-  fa: {
+(function () {
+  Datepicker.locales.fa = {
     days: ["یک‌شنبه", "دوشنبه", "سه‌شنبه", "چهارشنبه", "پنج‌شنبه", "جمعه", "شنبه", "یک‌شنبه"],
     daysShort: ["یک", "دو", "سه", "چهار", "پنج", "جمعه", "شنبه", "یک"],
     daysMin: ["ی", "د", "س", "چ", "پ", "ج", "ش", "ی"],
@@ -13,5 +13,5 @@ export default {
     clear: "پاک کن",
     weekStart: 1,
     format: "yyyy/mm/dd"
-  }
-};
+  };
+}());

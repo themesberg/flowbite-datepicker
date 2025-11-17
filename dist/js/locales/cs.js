@@ -3,8 +3,8 @@
  * Matěj Koubík <matej@koubik.name>
  * Fixes by Michal Remiš <michal.remis@gmail.com>
  */
-export default {
-  cs: {
+(function () {
+  Datepicker.locales.cs = {
     days: ["Neděle", "Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"],
     daysShort: ["Ned", "Pon", "Úte", "Stř", "Čtv", "Pát", "Sob"],
     daysMin: ["Ne", "Po", "Út", "St", "Čt", "Pá", "So"],
@@ -15,5 +15,5 @@ export default {
     monthsTitle: "Měsíc",
     weekStart: 1,
     format: "dd.mm.yyyy"
-  }
-};
+  };
+}());

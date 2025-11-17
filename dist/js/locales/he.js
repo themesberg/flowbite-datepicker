@@ -2,8 +2,8 @@
  * Hebrew translation for bootstrap-datepicker
  * Sagie Maoz <sagie@maoz.info>
  */
-export default {
-  he: {
+(function () {
+  Datepicker.locales.he = {
     days: ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת", "ראשון"],
     daysShort: ["א", "ב", "ג", "ד", "ה", "ו", "ש", "א"],
     daysMin: ["א", "ב", "ג", "ד", "ה", "ו", "ש", "א"],
@@ -11,5 +11,5 @@ export default {
     monthsShort: ["ינו", "פבר", "מרץ", "אפר", "מאי", "יונ", "יול", "אוג", "ספט", "אוק", "נוב", "דצמ"],
     today: "היום",
     rtl: true
-  }
-};
+  };
+}());

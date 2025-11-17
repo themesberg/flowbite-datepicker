@@ -2,8 +2,8 @@
  * Finnish translation for bootstrap-datepicker
  * Jaakko Salonen <https: //github.com/jsalonen>
  */
-export default {
-  fi: {
+(function () {
+  Datepicker.locales.fi = {
     days: ["sunnuntai", "maanantai", "tiistai", "keskiviikko", "torstai", "perjantai", "lauantai"],
     daysShort: ["sun", "maa", "tii", "kes", "tor", "per", "lau"],
     daysMin: ["su", "ma", "ti", "ke", "to", "pe", "la"],
@@ -13,5 +13,5 @@ export default {
     clear: "Tyhjennä",
     weekStart: 1,
     format: "d.m.yyyy"
-  }
-};
+  };
+}());

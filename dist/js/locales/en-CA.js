@@ -2,8 +2,8 @@
  * Canadian English translation for bootstrap-datepicker
  * Mike Nacey <mnacey@gmail.com>
  */
-export default {
-  'en-CA': {
+(function () {
+  Datepicker.locales['en-CA'] = {
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
     daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
@@ -14,5 +14,5 @@ export default {
     clear: "Clear",
     weekStart: 0,
     format: "yyyy-mm-dd"
-  }
-};
+  };
+}());

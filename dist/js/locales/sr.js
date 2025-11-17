@@ -2,8 +2,8 @@
  * Serbian cyrillic translation for bootstrap-datepicker
  * Bojan Milosavlević <milboj@gmail.com>
  */
-export default {
-  sr: {
+(function () {
+  Datepicker.locales.sr = {
     days: ["Недеља","Понедељак", "Уторак", "Среда", "Четвртак", "Петак", "Субота"],
     daysShort: ["Нед", "Пон", "Уто", "Сре", "Чет", "Пет", "Суб"],
     daysMin: ["Н", "По", "У", "Ср", "Ч", "Пе", "Су"],
@@ -12,5 +12,5 @@ export default {
     today: "Данас",
     weekStart: 1,
     format: "dd.mm.yyyy"
-  }
-};
+  };
+}());

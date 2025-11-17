@@ -2,8 +2,8 @@
  * Breton translation for bootstrap-datepicker
  * Gwenn Meynier <tornoz@laposte.net>
  */
-export default {
-  br: {
+(function () {
+  Datepicker.locales.br = {
     days: ["Sul", "Lun", "Meurzh", "Merc'her", "Yaou", "Gwener", "Sadorn"],
     daysShort: ["Sul", "Lun", "Meu.", "Mer.", "Yao.", "Gwe.", "Sad."],
     daysMin: ["Su", "L", "Meu", "Mer", "Y", "G", "Sa"],
@@ -14,5 +14,5 @@ export default {
     clear: "Dilemel",
     weekStart: 1,
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

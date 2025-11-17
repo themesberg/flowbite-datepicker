@@ -2,8 +2,8 @@
  * Esperanto translation for bootstrap-datepicker
  * Emmanuel Debanne <https: //github.com/debanne>
  */
-export default {
-  eo: {
+(function () {
+  Datepicker.locales.eo = {
     days: ["dimanĉo", "lundo", "mardo", "merkredo", "ĵaŭdo", "vendredo", "sabato"],
     daysShort: ["dim.", "lun.", "mar.", "mer.", "ĵaŭ.", "ven.", "sam."],
     daysMin: ["d", "l", "ma", "me", "ĵ", "v", "s"],
@@ -13,5 +13,5 @@ export default {
     clear: "Nuligi",
     weekStart: 1,
     format: "yyyy-mm-dd"
-  }
-};
+  };
+}());

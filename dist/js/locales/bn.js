@@ -3,8 +3,8 @@
  * Karim Khan <kkhancse91@gmail.com>
  * Orif N. Jr. <orif.zade@gmail.com>
  */
-export default {
-  bn: {
+(function () {
+  Datepicker.locales.bn = {
     days: ["রবিবার","সোমবার","মঙ্গলবার","বুধবার","বৃহস্পতিবার","শুক্রবার","শনিবার"],
     daysShort: ["রবিবার","সোমবার","মঙ্গলবার","বুধবার","বৃহস্পতিবার","শুক্রবার","শনিবার"],
     daysMin: ["রবি","সোম","মঙ্গল","বুধ","বৃহস্পতি","শুক্র","শনি"],
@@ -15,5 +15,5 @@ export default {
     clear: "পরিষ্কার",
     weekStart: 0,
     format: "mm/dd/yyyy"
-  }
-};
+  };
+}());

@@ -3,8 +3,8 @@
  * Christian Pedersen <https: //github.com/chripede>
  * Ivan Mylyanyk <https: //github.com/imylyanyk>
  */
-export default {
-  da: {
+(function () {
+  Datepicker.locales.da = {
     days: ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
     daysShort: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør"],
     daysMin: ["Sø", "Ma", "Ti", "On", "To", "Fr", "Lø"],
@@ -15,5 +15,5 @@ export default {
     clear: "Nulstil",
     format: "dd/mm/yyyy",
     monthsTitle: "Måneder"
-  }
-};
+  };
+}());

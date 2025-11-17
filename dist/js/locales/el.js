@@ -1,8 +1,8 @@
 /**
  * Greek translation for bootstrap-datepicker
  */
-export default {
-  el: {
+(function () {
+  Datepicker.locales.el = {
     days: ["Κυριακή", "Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο"],
     daysShort: ["Κυρ", "Δευ", "Τρι", "Τετ", "Πεμ", "Παρ", "Σαβ"],
     daysMin: ["Κυ", "Δε", "Τρ", "Τε", "Πε", "Πα", "Σα"],
@@ -12,5 +12,5 @@ export default {
     clear: "Καθαρισμός",
     weekStart: 1,
     format: "d/m/yyyy"
-  }
-};
+  };
+}());

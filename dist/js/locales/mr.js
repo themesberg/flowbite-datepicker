@@ -2,8 +2,8 @@
  * Marathi translation for bootstrap-datepicker
  * Sushant Pimple <pimplesushant@gmail.com>
  */
-export default {
-  mr: {
+(function () {
+  Datepicker.locales.mr = {
     days: ["रविवार", "सोमवार", "मंगळवार", "बुधवार", "गुरुवार", "शुक्रवार", "शनिवार"],
     daysShort: ["रवि", "सोम", "मंगळ", "बुध", "गुरु", "शुक्र", "शनि"],
     daysMin: ["र", "सो", "मं", "बु", "गु", "शु", "श"],
@@ -14,5 +14,5 @@ export default {
     clear: "हटवा",
     weekStart: 1,
     format: "dd / mm / yyyy"
-  }
-};
+  };
+}());

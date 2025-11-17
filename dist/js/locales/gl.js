@@ -1,8 +1,8 @@
 /**
  * Galician translation
  */
-export default {
-  gl: {
+(function () {
+  Datepicker.locales.gl = {
     days: ["Domingo", "Luns", "Martes", "Mércores", "Xoves", "Venres", "Sábado"],
     daysShort: ["Dom", "Lun", "Mar", "Mér", "Xov", "Ven", "Sáb"],
     daysMin: ["Do", "Lu", "Ma", "Me", "Xo", "Ve", "Sa"],
@@ -12,5 +12,5 @@ export default {
     clear: "Limpar",
     weekStart: 1,
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

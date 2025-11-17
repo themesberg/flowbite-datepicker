@@ -2,8 +2,8 @@
  * Basque translation for bootstrap-datepicker
  * Arkaitz Etxeberria <kondi80@gmail.com>
  */
-export default {
-  eu: {
+(function () {
+  Datepicker.locales.eu = {
     days: ['Igandea', 'Astelehena', 'Asteartea', 'Asteazkena', 'Osteguna', 'Ostirala', 'Larunbata'],
     daysShort: ['Ig', 'Al', 'Ar', 'Az', 'Og', 'Ol', 'Lr'],
     daysMin: ['Ig', 'Al', 'Ar', 'Az', 'Og', 'Ol', 'Lr'],
@@ -14,5 +14,5 @@ export default {
     clear: "Ezabatu",
     weekStart: 1,
     format: "yyyy/mm/dd"
-  }
-};
+  };
+}());

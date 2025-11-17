@@ -1,4 +1,6 @@
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "initialize|on[A-Z]*" }]*/
+const {Datepicker, DateRangePicker} = FlowbiteDatepicker;
+
 var templates = {
   input: `<div class="field">
   <div class="control">

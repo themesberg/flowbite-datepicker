@@ -2,8 +2,8 @@
  * Uzbek cyrillic translation for bootstrap-datepicker
  * Kakhramonov Javlonbek <kakjavlon@gmail.com>
  */
-export default {
-  'uz-cyrl': {
+(function () {
+  Datepicker.locales['uz-cyrl'] = {
     days: ["Якшанба", "Душанба", "Сешанба", "Чоршанба", "Пайшанба", "Жума", "Шанба"],
     daysShort: ["Якш", "Ду", "Се", "Чор", "Пай", "Жу", "Ша"],
     daysMin: ["Як", "Ду", "Се", "Чо", "Па", "Жу", "Ша"],
@@ -14,5 +14,5 @@ export default {
     format: "dd.mm.yyyy",
     weekStart: 1,
     monthsTitle: 'Ойлар'
-  }
-};
+  };
+}());

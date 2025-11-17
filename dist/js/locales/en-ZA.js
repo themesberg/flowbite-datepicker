@@ -1,8 +1,8 @@
 /**
  * South African English translation for bootstrap-datepicker
  */
-export default {
-  'en-ZA': {
+(function () {
+  Datepicker.locales['en-ZA'] = {
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
     daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
@@ -13,5 +13,5 @@ export default {
     clear: "Clear",
     weekStart: 1,
     format: "yyyy/mm/d"
-  }
-};
+  };
+}());

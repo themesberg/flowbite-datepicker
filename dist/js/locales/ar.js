@@ -2,8 +2,8 @@
  * Arabic translation for bootstrap-datepicker
  * Mohammed Alshehri <alshehri866@gmail.com>
  */
-export default {
-  ar: {
+(function () {
+  Datepicker.locales.ar = {
     days: ["الأحد", "الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"],
     daysShort: ["أحد", "اثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت", "أحد"],
     daysMin: ["ح", "ن", "ث", "ع", "خ", "ج", "س", "ح"],
@@ -11,5 +11,5 @@ export default {
     monthsShort: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
     today: "هذا اليوم",
     rtl: true
-  }
-};
+  };
+}());

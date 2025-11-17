@@ -3,8 +3,8 @@
  * Bakhtiyor Bahritidinov <i@bakhtiyor.tj>
  * Orif N. Jr. <orif.zade@gmail.com>
  */
-export default {
-  tg: {
+(function () {
+  Datepicker.locales.tg = {
     days: ["Якшанбе", "Душанбе", "Сешанбе", "Чоршанбе", "Панҷшанбе", "Ҷумъа", "Шанбе"],
     daysShort: ["Яшб", "Дшб", "Сшб", "Чшб", "Пшб", "Ҷум", "Шнб"],
     daysMin: ["Яш", "Дш", "Сш", "Чш", "Пш", "Ҷм", "Шб"],
@@ -15,5 +15,5 @@ export default {
     clear: "Тоза намудан",
     weekStart: 1,
     format: "dd.mm.yyyy"
-  }
-};
+  };
+}());

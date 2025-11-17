@@ -1,8 +1,8 @@
 /**
  * Occitan translation for bootstrap-datepicker
  */
-export default {
-  oc: {
+(function () {
+  Datepicker.locales.oc = {
     days: ["Dimenge", "Diluns", "Dimars", "Dimècres", "Dijòus", "Divendres", "Dissabte"],
     daysShort: ["Dim",  "Dil", "Dmr", "Dmc", "Dij", "Div", "Dis"],
     daysMin: ["dg", "dl", "dr", "dc", "dj", "dv", "ds"],
@@ -13,5 +13,5 @@ export default {
     clear: "Escafar",
     weekStart: 1,
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

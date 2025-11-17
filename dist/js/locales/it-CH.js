@@ -5,8 +5,8 @@
  * Italian translation for bootstrap-datepicker
  * Enrico Rubboli <rubboli@gmail.com>
  */
-export default {
-  'it-CH': {
+(function () {
+  Datepicker.locales['it-CH'] = {
     days: ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
     daysShort: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"],
     daysMin: ["Do", "Lu", "Ma", "Me", "Gi", "Ve", "Sa"],
@@ -16,5 +16,5 @@ export default {
     clear: "Cancella",
     weekStart: 1,
     format: "dd.mm.yyyy"
-  }
-};
+  };
+}());

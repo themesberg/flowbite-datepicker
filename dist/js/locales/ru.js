@@ -2,8 +2,8 @@
  * Russian translation for bootstrap-datepicker
  * Victor Taranenko <darwin@snowdale.com>
  */
-export default {
-  ru: {
+(function () {
+  Datepicker.locales.ru = {
     days: ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"],
     daysShort: ["Вск", "Пнд", "Втр", "Срд", "Чтв", "Птн", "Суб"],
     daysMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
@@ -14,5 +14,5 @@ export default {
     format: "dd.mm.yyyy",
     weekStart: 1,
     monthsTitle: 'Месяцы'
-  }
-};
+  };
+}());

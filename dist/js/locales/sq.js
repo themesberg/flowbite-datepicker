@@ -2,8 +2,8 @@
  * Albanian translation for bootstrap-datepicker
  * Tomor Pupovci <https: //www.github.com/ttomor>
  */
-export default {
-  sq: {
+(function () {
+  Datepicker.locales.sq = {
     days: ["E Diel", "E Hënë", "E Martē", "E Mërkurë", "E Enjte", "E Premte", "E Shtunë"],
     daysShort: ["Die", "Hën", "Mar", "Mër", "Enj", "Pre", "Shtu"],
     daysMin: ["Di", "Hë", "Ma", "Më", "En", "Pr", "Sht"],
@@ -14,5 +14,5 @@ export default {
     weekStart: 1,
     format: "dd/mm/yyyy",
     clear: "Pastro"
-  }
-};
+  };
+}());

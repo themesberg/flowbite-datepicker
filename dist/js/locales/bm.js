@@ -2,8 +2,8 @@
  * Bamanankan (bm) translation for bootstrap-datepicker
  * Fatou Fall <fatou@medicmobile.org>
  */
-export default {
-  bm: {
+(function () {
+  Datepicker.locales.bm = {
     days: ["Kari","Ntɛnɛn","Tarata","Araba","Alamisa","Juma","Sibiri"],
     daysShort: ["Kar","Ntɛ","Tar","Ara","Ala","Jum","Sib"],
     daysMin: ["Ka","Nt","Ta","Ar","Al","Ju","Si"],
@@ -14,5 +14,5 @@ export default {
     clear: "Ka jɔsi",
     weekStart: 1,
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

@@ -3,8 +3,8 @@
  * Artis Avotins <artis@apit.lv>
  */
 
-export default {
-  lv: {
+(function () {
+  Datepicker.locales.lv = {
     days: ["Svētdiena", "Pirmdiena", "Otrdiena", "Trešdiena", "Ceturtdiena", "Piektdiena", "Sestdiena"],
     daysShort: ["Sv", "P", "O", "T", "C", "Pk", "S"],
     daysMin: ["Sv", "Pr", "Ot", "Tr", "Ce", "Pk", "Se"],
@@ -14,5 +14,5 @@ export default {
     today: "Šodien",
     clear: "Nodzēst",
     weekStart: 1
-  }
-};
+  };
+}());

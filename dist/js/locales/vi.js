@@ -2,8 +2,8 @@
  * Vietnamese translation for bootstrap-datepicker
  * An Vo <https: //github.com/anvoz/>
  */
-export default {
-  vi: {
+(function () {
+  Datepicker.locales.vi = {
     days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
     daysShort: ["CN", "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7"],
     daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
@@ -12,5 +12,5 @@ export default {
     today: "Hôm nay",
     clear: "Xóa",
     format: "dd/mm/yyyy"
-  }
-};
+  };
+}());

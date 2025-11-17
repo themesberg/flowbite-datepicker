@@ -1,6 +1,6 @@
 // Azerbaijani
-export default {
-  az: {
+(function () {
+  Datepicker.locales.az = {
     days: ["Bazar", "Bazar ertəsi", "Çərşənbə axşamı", "Çərşənbə", "Cümə axşamı", "Cümə", "Şənbə"],
     daysShort: ["B.", "B.e", "Ç.a", "Ç.", "C.a", "C.", "Ş."],
     daysMin: ["B.", "B.e", "Ç.a", "Ç.", "C.a", "C.", "Ş."],
@@ -10,5 +10,5 @@ export default {
     weekStart: 1,
     clear: "Təmizlə",
     monthsTitle: 'Aylar'
-  }
-};
+  };
+}());

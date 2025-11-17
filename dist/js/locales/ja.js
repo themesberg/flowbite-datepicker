@@ -2,8 +2,8 @@
  * Japanese translation for bootstrap-datepicker
  * Norio Suzuki <https: //github.com/suzuki/>
  */
-export default {
-  ja: {
+(function () {
+  Datepicker.locales.ja = {
     days: ["日曜", "月曜", "火曜", "水曜", "木曜", "金曜", "土曜"],
     daysShort: ["日", "月", "火", "水", "木", "金", "土"],
     daysMin: ["日", "月", "火", "水", "木", "金", "土"],
@@ -13,5 +13,5 @@ export default {
     format: "yyyy/mm/dd",
     titleFormat: "y年mm月",
     clear: "クリア"
-  }
-};
+  };
+}());

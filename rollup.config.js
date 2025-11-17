@@ -14,6 +14,11 @@ export default [
         file: 'dist/main.esm.js',
         format: 'es',
       },
+      {
+        file: 'dist/main.umd.js',
+        format: 'umd',
+        name: 'FlowbiteDatepicker',
+      },
     ],
     plugins: [
       resolve(),
@@ -32,6 +37,11 @@ export default [
         file: 'dist/Datepicker.esm.js',
         format: 'es',
       },
+      {
+        file: 'dist/Datepicker.umd.js',
+        format: 'umd',
+        name: 'Datepicker',
+      },
     ],
     plugins: [
       resolve(),
@@ -49,6 +59,11 @@ export default [
       {
         file: 'dist/DateRangePicker.esm.js',
         format: 'es',
+      },
+      {
+        file: 'dist/DateRangePicker.umd.js',
+        format: 'umd',
+        name: 'DateRangePicker',
       },
     ],
     plugins: [

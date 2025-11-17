@@ -2,8 +2,8 @@
  * Korean translation for bootstrap-datepicker
  * This is a port from https: //github.com/moment/moment/blob/develop/src/locale/ko.js
  */
-export default {
-  ko: {
+(function () {
+  Datepicker.locales.ko = {
     days: ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"],
     daysShort: ["일", "월", "화", "수", "목", "금", "토"],
     daysMin: ["일", "월", "화", "수", "목", "금", "토"],
@@ -14,5 +14,5 @@ export default {
     format: "yyyy-mm-dd",
     titleFormat: "y년mm월",
     weekStart: 0
-  }
-};
+  };
+}());

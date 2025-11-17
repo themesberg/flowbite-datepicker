@@ -2,8 +2,8 @@
  * Georgian translation for bootstrap-datepicker
  * Levan Melikishvili <levani0101@yahoo.com>
  */
-export default {
-  ka: {
+(function () {
+  Datepicker.locales.ka = {
     days: ["კვირა", "ორშაბათი", "სამშაბათი", "ოთხშაბათი", "ხუთშაბათი", "პარასკევი", "შაბათი"],
     daysShort: ["კვი", "ორშ", "სამ", "ოთხ", "ხუთ", "პარ", "შაბ"],
     daysMin: ["კვ", "ორ", "სა", "ოთ", "ხუ", "პა", "შა"],
@@ -13,5 +13,5 @@ export default {
     clear: "გასუფთავება",
     weekStart: 1,
     format: "dd.mm.yyyy"
-  }
-};
+  };
+}());

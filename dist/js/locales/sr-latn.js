@@ -2,8 +2,8 @@
  * Serbian latin translation for bootstrap-datepicker
  * Bojan Milosavlević <milboj@gmail.com>
  */
-export default {
-  'sr-latn': {
+(function () {
+  Datepicker.locales['sr-latn'] = {
     days: ["Nedelja","Ponedeljak", "Utorak", "Sreda", "Četvrtak", "Petak", "Subota"],
     daysShort: ["Ned", "Pon", "Uto", "Sre", "Čet", "Pet", "Sub"],
     daysMin: ["N", "Po", "U", "Sr", "Č", "Pe", "Su"],
@@ -12,5 +12,5 @@ export default {
     today: "Danas",
     weekStart: 1,
     format: "dd.mm.yyyy"
-  }
-};
+  };
+}());
