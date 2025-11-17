@@ -97,7 +97,7 @@ export default class DaysView extends View {
       Array.from(this.dow.children).forEach((el, index) => {
         const dow = (this.weekStart + index) % 7;
         el.textContent = this.dayNames[dow];
-        el.className = this.daysOfWeekDisabled.includes(dow) ? 'dow disabled text-center h-6 leading-6 text-sm font-medium text-gray-500 dark:text-gray-400 cursor-not-allowed' : 'dow text-center h-6 leading-6 text-sm font-medium text-gray-500 dark:text-gray-400';
+        el.className = this.daysOfWeekDisabled.includes(dow) ? 'dow disabled text-center h-6 leading-6 text-sm font-medium text-fg-disabled cursor-not-allowed' : 'dow text-center h-6 leading-6 text-sm font-medium text-body';
       });
     }
   }
@@ -151,25 +151,25 @@ export default class DaysView extends View {
       const date = new Date(current);
       const day = date.getDay();
 
-      el.className = `datepicker-cell hover:bg-neutral-tertiary-medium block flex-1 leading-9 border-0 rounded-base cursor-pointer text-center text-body dark:text-white font-semibold text-sm ${this.cellClass}`;
+      el.className = `datepicker-cell hover:bg-neutral-tertiary-medium block flex-1 leading-9 border-0 rounded-base cursor-pointer text-center text-body font-medium text-sm ${this.cellClass}`;
       el.dataset.date = current;
       el.textContent = date.getDate();
 
       if (current < this.first) {
-        classList.add('prev', 'text-gray-500', 'dark:text-white');
+        classList.add('prev', 'text-fg-disabled');
       } else if (current > this.last) {
-        classList.add('next', 'text-gray-500', 'dark:text-white');
+        classList.add('next', 'text-fg-disabled');
       }
       if (this.today === current) {
         classList.add('today', 'bg-gray-100', 'dark:bg-gray-600');
       }
       if (current < this.minDate || current > this.maxDate || this.disabled.includes(current)) {
-        classList.add('disabled', 'cursor-not-allowed', 'text-gray-400', 'dark:text-gray-500');
-        classList.remove('hover:bg-neutral-tertiary-medium', 'text-body', 'dark:text-white', 'cursor-pointer');
+        classList.add('disabled', 'cursor-not-allowed', 'text-fg-disabled');
+        classList.remove('hover:bg-neutral-tertiary-medium', 'text-fg-disabled', 'cursor-pointer');
       }
       if (this.daysOfWeekDisabled.includes(day)) {
-        classList.add('disabled', 'cursor-not-allowed', 'text-gray-400', 'dark:text-gray-500');
-        classList.remove('hover:bg-neutral-tertiary-medium', 'text-body', 'dark:text-white', 'cursor-pointer');
+        classList.add('disabled', 'cursor-not-allowed', 'text-fg-disabled');
+        classList.remove('hover:bg-neutral-tertiary-medium', 'text-fg-disabled', 'cursor-pointer');
         pushUnique(this.disabled, current);
       }
       if (this.daysOfWeekHighlighted.includes(day)) {
@@ -191,8 +191,8 @@ export default class DaysView extends View {
         }
       }
       if (this.selected.includes(current)) {
-        classList.add('selected', 'bg-brand', 'text-white', 'dark:text-white');
-        classList.remove('text-body', 'text-gray-500', 'hover:bg-neutral-tertiary-medium', 'dark:text-white', 'dark:bg-gray-600', 'bg-gray-100', 'bg-gray-200');
+        classList.add('selected', 'bg-brand', 'text-white');
+        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'dark:bg-gray-600', 'bg-gray-100', 'bg-gray-200');
       }
       if (current === this.focused) {
         classList.add('focused');
@@ -210,8 +210,8 @@ export default class DaysView extends View {
     this.grid
       .querySelectorAll('.range, .range-start, .range-end, .selected, .focused')
       .forEach((el) => {
-        el.classList.remove('range', 'range-start', 'range-end', 'selected', 'bg-brand', 'text-white', 'dark:text-white', 'focused');
-        el.classList.add('text-body', 'rounded-base', 'dark:text-white');
+        el.classList.remove('range', 'range-start', 'range-end', 'selected', 'bg-brand', 'text-white', 'focused');
+        el.classList.add('text-body', 'rounded-base');
       });
     Array.from(this.grid.children).forEach((el) => {
       const current = Number(el.dataset.date);
@@ -230,8 +230,8 @@ export default class DaysView extends View {
         classList.remove('rounded-base',);
       }
       if (this.selected.includes(current)) {
-        classList.add('selected', 'bg-brand', 'text-white', 'dark:text-white');
-        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'dark:text-white', 'bg-gray-100', 'bg-gray-200', 'dark:bg-gray-600');
+        classList.add('selected', 'bg-brand', 'text-white');
+        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'bg-gray-100', 'bg-gray-200', 'dark:bg-gray-600');
       }
       if (current === this.focused) {
         classList.add('focused');

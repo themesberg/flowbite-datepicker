@@ -89,7 +89,7 @@ export default class YearsView extends View {
       const current = this.start + (index * this.step);
       const date = dateValue(current, 0, 1);
 
-      el.className = `datepicker-cell hover:bg-neutral-tertiary-medium block flex-1 leading-9 border-0 rounded-base cursor-pointer text-center text-body dark:text-white font-semibold text-sm ${this.cellClass}`;
+      el.className = `datepicker-cell hover:bg-neutral-tertiary-medium block flex-1 leading-9 border-0 rounded-base cursor-pointer text-center text-body font-medium text-sm ${this.cellClass}`;
       if (this.isMinView) {
         el.dataset.date = date;
       }
@@ -150,8 +150,8 @@ export default class YearsView extends View {
         classList.add('range-end');
       }
       if (this.selected.includes(current)) {
-        classList.add('selected', 'bg-brand', 'text-white', 'hover:text-leading');
-        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'hover:text-leading');
+        classList.add('selected', 'bg-brand', 'text-white', 'hover:text-heading');
+        classList.remove('text-body', 'hover:bg-neutral-tertiary-medium', 'hover:text-heading');
       }
       if (current === this.focused) {
         classList.add('focused');

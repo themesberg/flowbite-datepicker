@@ -71,6 +71,7 @@
     --radius-base: 12px;
     --color-body: var(--color-gray-600);
     --color-heading: var(--color-gray-900);
+    --color-fg-disabled: var(--color-gray-400);
     --color-neutral-primary: var(--color-white);
     --color-neutral-primary-medium: var(--color-white);
     --color-neutral-secondary: var(--color-gray-50);
@@ -83,6 +84,7 @@
     --color-dark: var(--color-gray-800);
     --color-light: var(--color-gray-100);
     --color-default: var(--color-gray-200);
+    --color-default-medium: var(--color-gray-200);
   }
 }
 @layer base {
@@ -431,6 +433,9 @@
   .border-brand {
     border-color: var(--color-brand);
   }
+  .border-default-medium {
+    border-color: var(--color-default-medium);
+  }
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
@@ -512,12 +517,11 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
-  .font-semibold {
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
-  }
   .text-body {
     color: var(--color-body);
+  }
+  .text-fg-disabled {
+    color: var(--color-fg-disabled);
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -527,6 +531,9 @@
   }
   .text-gray-800 {
     color: var(--color-gray-800);
+  }
+  .text-heading {
+    color: var(--color-heading);
   }
   .text-white {
     color: var(--color-white);
@@ -568,6 +575,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-body);
+      }
+    }
+  }
+  .hover\:text-heading {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-heading);
       }
     }
   }
