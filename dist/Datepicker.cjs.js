@@ -1125,11 +1125,11 @@ var DaysView = /*#__PURE__*/function (_View) {
         }
         if (current < _this2.minDate || current > _this2.maxDate || _this2.disabled.includes(current)) {
           classList.add('disabled', 'cursor-not-allowed', 'text-fg-disabled');
-          classList.remove('hover:bg-neutral-tertiary-medium', 'text-fg-disabled', 'cursor-pointer');
+          classList.remove('hover:bg-neutral-tertiary-medium', 'text-body', 'cursor-pointer');
         }
         if (_this2.daysOfWeekDisabled.includes(day)) {
           classList.add('disabled', 'cursor-not-allowed', 'text-fg-disabled');
-          classList.remove('hover:bg-neutral-tertiary-medium', 'text-fg-disabled', 'cursor-pointer');
+          classList.remove('hover:bg-neutral-tertiary-medium', 'text-body', 'cursor-pointer');
           pushUnique(_this2.disabled, current);
         }
         if (_this2.daysOfWeekHighlighted.includes(day)) {

@@ -377,6 +377,54 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .dark {
+    & .apexcharts-canvas .apexcharts-tooltip {
+      background-color: var(--color-neutral-secondary-medium) !important;
+      color: var(--color-body) !important;
+      border-color: var(--color-default) !important;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+    }
+    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
+      background-color: var(--color-neutral-tertiary-medium) !important;
+      border-color: var(--color-light) !important;
+      color: var(--color-heading) !important;
+    }
+    & .apexcharts-canvas .apexcharts-xaxistooltip {
+      color: var(--color-body) !important;
+      background-color: var(--color-neutral-secondary-medium) !important;
+    }
+    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
+      color: var(--color-body) !important;
+    }
+    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
+      color: white !important;
+    }
+    & .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active {
+      background-color: var(--color-neutral-secondary-medium) !important;
+      color: var(--color-body) !important;
+    }
+    & .apexcharts-canvas .apexcharts-legend-text {
+      color: var(--color-body) !important;
+    }
+    & .apexcharts-canvas .apexcharts-legend-text:not(.apexcharts-inactive-legend):hover {
+      color: heading !important;
+    }
+    & .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-value {
+      fill: white !important;
+    }
+    & .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-label {
+      fill: var(--color-body) !important;
+    }
+    & .apexcharts-gridline {
+      stroke: var(--color-default) !important;
+    }
+    & .apexcharts-xcrosshairs {
+      stroke: var(--color-default) !important;
+    }
+    & .apexcharts-ycrosshairs {
+      stroke: var(--color-default) !important;
+    }
+  }
   .border-blue-700 {
     border-color: var(--color-blue-700);
   }
@@ -412,6 +460,11 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .dark {
+    & .selectedCell {
+      background-color: var(--color-neutral-secondary-medium);
+    }
   }
   .selected {
     .datatable-wrapper .datatable-table tbody tr& {

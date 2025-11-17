@@ -1,6 +1,6 @@
 {
-  "name": "flowbite-datepicker",
-  "version": "1.3.2",
+  "name": "flowbite-datepicker-test",
+  "version": "2.0.0",
   "description": "A Tailwind CSS powered datepicker built with vanilla JavaScript and Flowbite",
   "main": "dist/main.cjs.js",
   "module": "dist/main.esm.js",

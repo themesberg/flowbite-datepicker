@@ -165,11 +165,11 @@ export default class DaysView extends View {
       }
       if (current < this.minDate || current > this.maxDate || this.disabled.includes(current)) {
         classList.add('disabled', 'cursor-not-allowed', 'text-fg-disabled');
-        classList.remove('hover:bg-neutral-tertiary-medium', 'text-fg-disabled', 'cursor-pointer');
+        classList.remove('hover:bg-neutral-tertiary-medium', 'text-body', 'cursor-pointer');
       }
       if (this.daysOfWeekDisabled.includes(day)) {
         classList.add('disabled', 'cursor-not-allowed', 'text-fg-disabled');
-        classList.remove('hover:bg-neutral-tertiary-medium', 'text-fg-disabled', 'cursor-pointer');
+        classList.remove('hover:bg-neutral-tertiary-medium', 'text-body', 'cursor-pointer');
         pushUnique(this.disabled, current);
       }
       if (this.daysOfWeekHighlighted.includes(day)) {
