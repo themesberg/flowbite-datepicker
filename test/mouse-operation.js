@@ -88,9 +88,9 @@ describe('mouse operation', function () {
     testContainer.removeChild(outsider);
   });
 
-  it('picker shows up if input field is clicked wheh picker is hidden', function () {
+  it('picker shows up if input field is clicked when picker is hidden', function () {
     const {dp, picker} = createDP(input);
-    // when input field is not focued
+    // when input field is not focused
     simulant.fire(input, 'mousedown');
     input.click();
     expect(isVisible(picker), 'to be true');
@@ -177,7 +177,7 @@ describe('mouse operation', function () {
   });
 
   describe('prev-btn', function () {
-    it('changes the month/year/decade/century of the view to the previouse one', function () {
+    it('changes the month/year/decade/century of the view to the previous one', function () {
       input.value = '04/22/2020';
 
       const {dp, picker} = createDP(input);

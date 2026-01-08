@@ -67,7 +67,7 @@ function processPickerOptions(picker, options) {
 
 // Compute view date to reset, which will be...
 // - the last item of the selected dates or defaultViewDate if no selection
-// - limitted to minDate or maxDate if it exceeds the range
+// - limited to minDate or maxDate if it exceeds the range
 function computeResetViewDate(datepicker) {
   const {dates, config} = datepicker;
   const viewDate = dates.length > 0 ? lastItemOf(dates) : config.defaultViewDate;

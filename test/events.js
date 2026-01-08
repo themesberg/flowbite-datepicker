@@ -254,7 +254,7 @@ describe('events', function () {
       expect(spyChangeMonth.calledTwice, 'to be true');
     });
 
-    it('is triggered when a different month is seleced on months view', function () {
+    it('is triggered when a different month is selected on months view', function () {
       viewSwitch.click();
 
       getCells(picker)[1].click();
@@ -450,7 +450,7 @@ describe('events', function () {
       expect(spyChangeYear.calledTwice, 'to be true');
     });
 
-    it('is triggered when a different year/decade is seleced on years/decades view', function () {
+    it('is triggered when a different year/decade is selected on years/decades view', function () {
       viewSwitch.click();
       viewSwitch.click();
       viewSwitch.click();

@@ -336,7 +336,7 @@ describe('options', function () {
       dp.destroy();
     });
 
-    it('prevents the input from getting focus after an eleent in the picker is clicked', function () {
+    it('prevents the input from getting focus after an element in the picker is clicked', function () {
       const {dp, picker} = createDP(input, {disableTouchKeyboard: true});
       const [viewSwitch, prevBtn] = getParts(picker, ['.view-switch', '.prev-btn']);
       dp.show();

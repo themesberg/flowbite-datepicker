@@ -120,7 +120,7 @@ describe('Datepicker', function () {
   });
 
   describe('picker', function () {
-    it('displays current month with current date as focued date if no initial date is provided', function () {
+    it('displays current month with current date as focused date if no initial date is provided', function () {
       let clock = sinon.useFakeTimers({now: new Date(2020, 1, 14)});
 
       const {dp, picker} = createDP(input);
@@ -158,7 +158,7 @@ describe('Datepicker', function () {
       clock.restore();
     });
 
-    it('displays iniial date\'s month with the date as selected and focued date', function () {
+    it('displays iniial date\'s month with the date as selected and focused date', function () {
       input.value = '04/22/2020';
 
       const {dp, picker} = createDP(input);

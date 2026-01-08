@@ -8,7 +8,7 @@ import {goToPrevOrNext, switchView, unfocus} from './functions.js';
 //   - args: time value, amount
 // increase: amount to pass to addFn
 // testFn: function to test the unavailablity of the date
-//   - args: time value; retun: true if unavailable
+//   - args: time value; return: true if unavailable
 function findNextAvailableOne(date, addFn, increase, testFn, min, max) {
   if (!isInRange(date, min, max)) {
     return;

@@ -37,7 +37,7 @@ If you want to use the **Tailwind Date Range Picker** you have to import the `Da
 import DateRangePicker from 'flowbite-datepicker/DateRangePicker';
 ```
 
-Then in the same fashion you can initalize a date range picker component by using the `DateRangePicker` constructor:
+Then in the same fashion you can initialize a date range picker component by using the `DateRangePicker` constructor:
 
 ```javascript
 const dateRangePickerEl = document.getElementById('dateRangePickerId');
