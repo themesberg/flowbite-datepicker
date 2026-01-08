@@ -1,7 +1,9 @@
 let range = null;
 
 export function parseHTML(html) {
-  if (range == null) { range = document.createRange() }
+  if (! (range instanceof Range)) {
+    range = document.createRange();
+  }
   return range.createContextualFragment(html);
 }
 
