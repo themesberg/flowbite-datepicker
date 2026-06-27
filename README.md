@@ -5,7 +5,7 @@ This project is a free and open source datepicker library which uses the utility
 This [Tailwind CSS Datepicker](https://flowbite.com/docs/plugins/datepicker/) is part of a larger library of components and interactive elements called Flowbite. Although it can also be used independently from the main library, we encourage you to check out the whole [Tailwind components library from Flowbite](https://flowbite.com/docs/getting-started/introduction/).
 
 <a href="https://flowbite.com/docs/plugins/datepicker/">
-  <img src="https://flowbite.s3.amazonaws.com/tailwind-css-datepicker.png" alt="Tailwind CSS Datepicker">
+  <img src="./docs/images/tailwind-css-datepicker.png" alt="Tailwind CSS Datepicker">
 </a> 
 
 ## Getting started
