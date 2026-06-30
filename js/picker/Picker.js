@@ -202,9 +202,8 @@ export default class Picker {
     if (!this.active) {
       return;
     }
-    this.datepicker.exitEditMode();
-    this.element.classList.remove('active', 'block');
-    this.element.classList.add('active', 'block', 'hidden');
+    this.datepicker.exitEditMode();    
+    this.element.classList.toggle('active', 'block', 'hidden');
     this.active = false;
     triggerDatepickerEvent(this.datepicker, 'hide');
   }
