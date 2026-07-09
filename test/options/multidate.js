@@ -90,7 +90,7 @@ describe('options - multi date', function () {
       expect(filterCells(cells, '.selected'), 'to equal', [cells[8], cells[27]]);
       expect(filterCells(cells, '.focused'), 'to equal', [cells[27]]);
 
-      // setting initial dates does not cuase error
+      // setting initial dates does not cause error
       // (issue #51)
       dp.destroy();
       input.value = '02/14/2020,04/22/2020,03/21/2020';
@@ -344,7 +344,7 @@ describe('options - multi date', function () {
   });
 
   describe('dateDelimiter', function () {
-    it('specifies the date delemiter for the input string', function () {
+    it('specifies the date delimiter for the input string', function () {
       const dp = new Datepicker(input, {maxNumberOfDates: 3, dateDelimiter: '|'});
 
       dp.setDate('2/14/2020', '4/22/2020');

@@ -28,7 +28,7 @@ describe('Datepicker - API methods', function () {
       expect(date.getTime(), 'to be', dateValue(2020, 3, 22));
     });
 
-    it('returns a formatted date stirng of selected date if the format is specified', function () {
+    it('returns a formatted date string of selected date if the format is specified', function () {
       expect(dp.getDate('yyyy-mm-dd'), 'to be', '2020-04-22');
     });
 
@@ -44,8 +44,8 @@ describe('Datepicker - API methods', function () {
 
   describe('setDate()', function () {
     it('changes the selected date to given date', function () {
-      const spyChnageEvent = sinon.spy();
-      input.addEventListener('change', spyChnageEvent);
+      const spyChangeEvent = sinon.spy();
+      input.addEventListener('change', spyChangeEvent);
 
       const viewSwitdh = getViewSwitch(picker);
       const date = new Date(2019, 11, 23);
@@ -73,8 +73,8 @@ describe('Datepicker - API methods', function () {
 
       // change by api call should not be a trigger of change event
       // (issue #24)
-      expect(spyChnageEvent.called, 'to be false');
-      input.removeEventListener('change', spyChnageEvent);
+      expect(spyChangeEvent.called, 'to be false');
+      input.removeEventListener('change', spyChangeEvent);
 
       // change the view to the selected daye's days view
       // (issue #33)
@@ -111,8 +111,8 @@ describe('Datepicker - API methods', function () {
     });
 
     it('clears the selection if no dates + clear: true option are given', function () {
-      const spyChnageEvent = sinon.spy();
-      input.addEventListener('change', spyChnageEvent);
+      const spyChangeEvent = sinon.spy();
+      input.addEventListener('change', spyChangeEvent);
 
       const viewSwitdh = getViewSwitch(picker);
       const today = dateUtils.today();
@@ -131,8 +131,8 @@ describe('Datepicker - API methods', function () {
 
       // change by api call should not be a trigger of change event
       // (issue #24)
-      expect(spyChnageEvent.called, 'to be false');
-      input.removeEventListener('change', spyChnageEvent);
+      expect(spyChangeEvent.called, 'to be false');
+      input.removeEventListener('change', spyChangeEvent);
     });
 
     it('omits updating the picker UI if render option = false', function () {
@@ -201,7 +201,7 @@ describe('Datepicker - API methods', function () {
       expect(cells[19].textContent, 'to be', '14');
     });
 
-    it('notmalizes iput text\'s format', function () {
+    it('notmalizes input text\'s format', function () {
       const date = new Date(2020, 6, 4);
       input.value = '7 4 2020';
 
@@ -215,8 +215,8 @@ describe('Datepicker - API methods', function () {
 
   describe('refresh()', function () {
     it('refreshes the input element and picker UI to refrect the internal data', function () {
-      const spyChnageEvent = sinon.spy();
-      input.addEventListener('change', spyChnageEvent);
+      const spyChangeEvent = sinon.spy();
+      input.addEventListener('change', spyChangeEvent);
 
       dp.dates = [dateValue(2020, 1, 14)];
       dp.refresh();
@@ -231,8 +231,8 @@ describe('Datepicker - API methods', function () {
 
       // change by api call should not be a trigger of change event
       // (issue #24)
-      expect(spyChnageEvent.called, 'to be false');
-      input.removeEventListener('change', spyChnageEvent);
+      expect(spyChangeEvent.called, 'to be false');
+      input.removeEventListener('change', spyChangeEvent);
     });
 
     it('also changes the view back to the selected date\'s days view', function () {

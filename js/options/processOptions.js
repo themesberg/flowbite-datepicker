@@ -56,7 +56,7 @@ export default function processOptions(options, datepicker) {
       if (locales[inOpts.language]) {
         lang = inOpts.language;
       } else {
-        // Check if langauge + region tag can fallback to the one without
+        // Check if language + region tag can fallback to the one without
         // region (e.g. fr-CA → fr)
         lang = inOpts.language.split('-')[0];
         if (locales[lang] === undefined) {

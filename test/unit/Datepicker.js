@@ -31,7 +31,7 @@ describe('Datepicker', function () {
       testContainer.removeChild(input);
     });
 
-    it('attachs the created instance to the bound element', function () {
+    it('attaches the created instance to the bound element', function () {
       const dp = new Datepicker(input);
       expect(input.datepicker, 'to be', dp);
     });
@@ -282,7 +282,7 @@ describe('Datepicker', function () {
   });
 
   describe('static parseDate()', function () {
-    it('parses a date string and returnes the time value of the date', function () {
+    it('parses a date string and returns the time value of the date', function () {
       Datepicker.locales.es = esLocale;
 
       let timeValue = new Date(2020, 0, 4).getTime();

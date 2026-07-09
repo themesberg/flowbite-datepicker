@@ -169,7 +169,7 @@ Alternatively, object that contains custom parser and formatter functions can be
     - `format`: {`Object`} - format object itself
     - `locale`: {`Object`} - locale of the current language
   - Return:
-    - {`String`} - formated date
+    - {`String`} - formatted date
 
 ```javascript
 {

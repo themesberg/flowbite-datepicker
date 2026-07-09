@@ -7,7 +7,7 @@ var domUtils = (function (exports) {
     return range.createContextualFragment(html);
   }
 
-  // equivalent to jQuery's :visble
+  // equivalent to jQuery's :visible
   function isVisible(el) {
     return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
   }
@@ -28,7 +28,7 @@ var domUtils = (function (exports) {
       return;
     }
     if (el.dataset.styleDisplay) {
-      // restore backed-up dispay property
+      // restore backed-up display property
       el.style.display = el.dataset.styleDisplay;
       delete el.dataset.styleDisplay;
     } else {

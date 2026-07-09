@@ -181,10 +181,10 @@ describe('options - buttons', function () {
       dp.destroy();
     });
 
-    it('specifies the behavior of the today buton', function () {
+    it('specifies the behavior of the today button', function () {
       const date = dateValue(2020, 1, 11);
 
-      // defualt to 0: focus-on (change view date)
+      // default to 0: focus-on (change view date)
       dp.setDate(date);
       todayBtn.click();
 
@@ -349,7 +349,7 @@ describe('options - buttons', function () {
         expect(cells[19].classList.contains('selected'), 'to be true');
         expect(dp.dates, 'to equal', [dateValue(2020, 1, 14)]);
 
-        // when current date is deslected by toggling in multi-date mode
+        // when current date is deselected by toggling in multi-date mode
         dp.setOptions({maxNumberOfDates: 3});
         nextBtn.click();
         getCells(picker)[20].click();

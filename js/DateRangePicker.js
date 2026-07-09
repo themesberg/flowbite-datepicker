@@ -96,7 +96,7 @@ export default class DateRangePicker  {
     setupDatepicker(this, changeDateListener, this.inputs[0], cleanOptions);
     setupDatepicker(this, changeDateListener, this.inputs[1], cleanOptions);
     Object.freeze(datepickers);
-    // normalize the range if inital dates are given
+    // normalize the range if initial dates are given
     if (datepickers[0].dates.length > 0) {
       onChangeDate(this, {target: this.inputs[0]});
     } else if (datepickers[1].dates.length > 0) {

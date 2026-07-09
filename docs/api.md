@@ -64,7 +64,7 @@ DOM object of picker element
 - Type: `DateRangePicker`
 
 DateRangePicker instance that the datepicker belongs to  
-Only avalable when the datepicker is a part of date range picker  
+Only available when the datepicker is a part of date range picker  
 (Read-only)
 
 
