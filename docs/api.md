@@ -78,7 +78,7 @@ Destroy the Datepicker instance
 datepicker.destroy()
 ```
 - **Return:**
-  - {`Detepicker`} - The instance destroyed
+  - {`Datepicker`} - The instance destroyed
 
 #### datepicker.getDate()
 
