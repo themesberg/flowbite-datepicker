@@ -4,16 +4,24 @@
   "description": "A Tailwind CSS powered datepicker built with vanilla JavaScript and Flowbite",
   "main": "dist/main.cjs.js",
   "module": "dist/main.esm.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
   "exports": {
     ".": {
+      "types": "./types/main.d.ts",
       "require": "./dist/main.cjs.js",
       "import": "./dist/main.esm.js"
     },
     "./Datepicker": {
+      "types": "./types/Datepicker.d.ts",
       "require": "./dist/Datepicker.cjs.js",
       "import": "./dist/Datepicker.esm.js"
     },
     "./DateRangePicker": {
+      "types": "./types/DateRangePicker.d.ts",
       "require": "./dist/DateRangePicker.cjs.js",
       "import": "./dist/DateRangePicker.esm.js"
     },
