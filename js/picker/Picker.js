@@ -282,6 +282,8 @@ export default class Picker {
 
   setViewSwitchLabel(labelText) {
     this.controls.viewSwitch.textContent = labelText;
+    // Set aria-label for accessibility
+    this.controls.viewSwitch.setAttribute('aria-label', labelText);
   }
 
   setPrevBtnDisabled(disabled) {
