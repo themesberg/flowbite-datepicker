@@ -1722,7 +1722,12 @@ function onClickView(datepicker, ev) {
     goToSelectedMonthOrYear(datepicker, Number(target.dataset.year));
   }
 }
-function onClickPicker(datepicker) {
+function onClickPicker(datepicker, ev) {
+  if (datepicker.inputField && datepicker.inputField.matches(':disabled')) {
+    ev.preventDefault();
+    ev.stopPropagation();
+    return;
+  }
   if (!datepicker.inline && !datepicker.config.disableTouchKeyboard) {
     datepicker.inputField.focus();
   }
